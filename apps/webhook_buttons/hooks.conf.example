@@ -1,0 +1,5 @@
+# Copy to SD card as 0:/apps/hooks.conf  (hook<N>: Label|METHOD|url ; optional body<N>:)
+hook1: Open Gate|GET|http://homeassistant.local:8123/api/webhook/gate_abc123
+hook2: Movie Mode|POST|http://homeassistant.local:8123/api/webhook/movie
+body2: {"scene":"movie"}
+hook3: Restart Pi-hole|POST|http://automation.local:5678/webhook/restart-pihole

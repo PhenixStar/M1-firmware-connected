@@ -1,0 +1,5 @@
+# Copy to SD card as 0:/apps/status.conf  (item<N>: Label|url|header|json_key)
+# Leave header empty for no auth: Label|url||key
+item1: Solar W|http://homeassistant.local:8123/api/states/sensor.solar_power|Authorization: Bearer PASTE_TOKEN|state
+item2: Office Temp|http://homeassistant.local:8123/api/states/sensor.office_temp|Authorization: Bearer PASTE_TOKEN|state
+# Yealink VC is a raw TCP API (not HTTP) - needs a future m1_tcp_* SDK module.

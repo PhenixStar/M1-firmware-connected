@@ -1,0 +1,9 @@
+# Copy to SD card as 0:/apps/ha.conf
+url: http://homeassistant.local:8123
+token: PASTE_LONG_LIVED_TOKEN_HERE
+name1: Living Room
+entity1: light.living_room
+name2: Bedroom Fan
+entity2: switch.bedroom_fan
+name3: Movie Scene
+entity3: scene.movie_night

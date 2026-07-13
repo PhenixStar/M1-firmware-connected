@@ -1,0 +1,6 @@
+# Copy to SD card as 0:/apps/fleet.conf  (host<N>: Label|url)
+host1: NAS-SAF|http://nas.local:5000
+host2: Home Asst|http://homeassistant.local:8123
+host3: Pi-hole|http://pihole.local/admin
+host4: MCE-HA NAS|http://nas2.local:5000
+host5: Yealink VC|http://192.168.1.50
