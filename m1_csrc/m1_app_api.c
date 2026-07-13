@@ -51,6 +51,7 @@
 #include "flipper_rfid.h"
 #include "flipper_subghz.h"
 #include "m1_wifi.h"
+#include "m1_http.h"
 #include "m1_field_detect.h"
 #include "m1_usb_cdc_msc.h"
 #include "m1_badusb.h"
@@ -243,6 +244,11 @@ void m1_app_api_init(void)
         { "m1_set_datetime",   (void *)m1_set_datetime },
         { "wifi_sync_rtc",     (void *)wifi_sync_rtc },
         { "wifi_scan_ap",      (void *)wifi_scan_ap },
+
+        /* ===== HTTP client (over ESP-AT AT+HTTPCLIENT) ===== */
+        { "m1_http_request",   (void *)m1_http_request },
+        { "m1_http_get",       (void *)m1_http_get },
+        { "m1_http_post_json", (void *)m1_http_post_json },
 
         /* ===== Memory management ===== */
         { "m1app_malloc",      (void *)m1app_malloc },
